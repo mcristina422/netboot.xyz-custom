@@ -5,9 +5,9 @@
 
 :custom
 clear custom_choice
-menu This is mcristina422 Boot Menu
+menu This is mcristina422's Boot Menu
 item --gap Options
-item option_one ${space} Loading xcp-ng 8.1 netinstall ISO
+item option_one ${space} Boot xcp-ng 8.1 netinstall ISO
 
 choose custom_choice || goto custom_exit
 echo ${cls}
