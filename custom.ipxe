@@ -6,7 +6,7 @@
 :custom
 clear custom_choice
 menu This is mcristina422 Boot Menu
-item --gap This is the first sub menu
+item --gap Options
 item option_one ${space} Loading xcp-ng 8.1 netinstall ISO
 
 choose custom_choice || goto custom_exit
@@ -16,7 +16,7 @@ goto custom_exit
 
 :option_one
 kernel https://boot.netboot.xyz/memdisk raw iso
-initrd http://mirror.xcp-ng.org/isos/8.1/xcp-ng-8.1.0-2-netinstall.iso
+initrd http://mirrors.xcp-ng.org/isos/8.1/xcp-ng-8.1.0-2-netinstall.iso
 boot || goto custom_exit
 
 :custom_exit
